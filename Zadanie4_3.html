@@ -1,13 +1,23 @@
 <html>
     <head>
         <title>ДЦ "Развитие"</title>
+        <style>
+            .leftimg {
+             float:left; /* Выравнивание по левому краю */
+             margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+            }
+            .rightimg  {
+             float: right; /* Выравнивание по правому краю  */ 
+             margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+            }
+           </style>
     </head>
     <body >
         <table border cellspacing=0 cellpadding=10 align=center>
-            <caption align=top> Расписание
+            <caption align=top> <h3><p style="color:rgb(232, 3, 3); font-size:25pt; font-family:'Times New Roman'"> Расписание</p></h3>
             </caption>
              <tr>
-             <th></th>
+             
              <th>ПН</th>
              <th>ВТ</th>
              <th>СР</th>
@@ -17,18 +27,44 @@
              <th>ВС</th>
              </tr>
              <tr>
-             <th> 10:00 </th>
-             <td align =right> Коробова В.С </td>
-             
-            
+             <th> 10:00-19:00 </th>
+             <td align =right> 10:00-19:00 </td>
+             <td align =right> 10:00-19:00 </td>
+             <td align =right> 10:00-19:00 </td>
+             <td align =right> 10:00-19:00 </td>
+             <td align =right> 10:00-19:00 </td>
+             <td align =right> 10:00-19:00 </td>
              </tr>
-             <tr>
-             <th> 13</th>
-             <td align =right> Коробова В.С </td>
+             
              
              
             </table>
+            <h3 align=center> <p style="color:rgb(232, 3, 3); font-size:25pt; font-family:'Times New Roman'">Где мы находимся </h3></p>
+            <h4><p style="color:rgb(0, 2, 0); font-size:14pt; font-family:'Times New Roman'"><img src="дом.jpg" width="500" height="400" class="leftimg"><img src="карта.jpg" width="300" height="400" class="leftimg">
+                г.Курск, ул. Дзержинского д.82
+                <br>
+                <br>
+                Контакты:
+                <br>
+                +7(910)315-19-50 
+                Коробова Виолетта Семеновна - руководитель ДЦ "Развитие"
+                <br>
+                <br><br>
+                <br><br>
+                <br><br>
+                <br>
+            </h4></p>
+            <label for="name">ФИО:</label>
+            <input type="text" id="name" name="name" required><br><br>
+     
+            <label for="number">Номер тлф:</label>
+            <input type="number" id="number" name="number" required><br><br>
+     
+            <label for="message">К какому специалисту:</label>
+            <input id="message" name="message" rows="5"required><br><br>
+     
+            <button type="submit">Записаться</button>
         <h1 align=center><font color="red"><a href="Zadanie4.html">Перейти в главное меню</a></font></h1>
-        <h1 align=center><font color="red"><a href="Zadanie4_2.html">Перейти к специалистам</a></font></h1>
+        <h1 align=center><font color="red"><a href="Zadane4_2.html">Перейти к специалистам</a></font></h1>
     </body>
 </html> 

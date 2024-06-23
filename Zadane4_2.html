@@ -1,13 +1,56 @@
 <html>
     <head>
+        <meta charset="utf-8">
         <title>ДЦ "Развитие"</title>
+        <style>
+            .leftimg {
+             float:left; /* Выравнивание по левому краю */
+             margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+            }
+            .rightimg  {
+             float: right; /* Выравнивание по правому краю  */ 
+             margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+            }
+           </style>
     </head>
     <body >
-        <h3 align=center> <p style="color:rgb(1, 90, 1); font-size:30pt; font-family:'Times New Roman'"> Наши специалисты</h3></p>
-        <h3> <p style="color:rgb(1, 90, 1); font-size:25pt; font-family:'Times New Roman'">Деффектолог и директор центра</h3></p>
-        <h4><p style="color:rgb(0, 2, 0); font-size:25pt; font-family:'Times New Roman'">Коробова Виолетта Семеновна</h4></p>
-        <img src="мама.jpg" width="300" height="400">
-        <h1 align=center><font color="red"> Наше <a href="Zadanie4_3.html">расписание</a></font></h1>
-        <h1 align=center><font color="red"><a href="Zadanie4.html">Перейти в главное меню</a></font></h1>
+        <h3 align=center> <p style="color:rgb(232, 3, 3); font-size:30pt; font-family:'Times New Roman'"> Наши специалисты</h3></p>
+        <h3> <p style="color:rgb(232, 3, 3); font-size:25pt; font-family:'Times New Roman'">Дефектолог-эргореабилитолог </h3></p>
+        
+        
+        <h4><p style="color:rgb(0, 2, 0); font-size:14pt; font-family:'Times New Roman'"><img src="мама.jpg" width="300" height="400" class="leftimg">
+            Коробова Виолетта Семеновна <br><br><br>
+            Дефектолог специалист, занимающийся развитием когнитивной сферы (внимание, память, мышление), 
+            коррекцией нарушения интеллектуального развития, оказывает помощь детям, испытывающим трудности 
+            в усвоении учебных навыков и отклонениях в развитии познавательных процессов.<br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </h4></p>
+        <h3> <p style="color:rgb(232, 3, 3); font-size:25pt; font-family:'Times New Roman'">Учитель-логопед высшей квалификационной категории </h3></p>
+        <h4><p style="color:rgb(0, 2, 0); font-size:14pt; font-family:'Times New Roman'">
+            Пенькова Светлана Владимировна <br><br><br>
+            Обследование звуковой культуры речи, обследование грамматического строя речи,
+             обследование обращенной речи, обследование связанной речи,
+              постановка звуков, обучение чтению и письму.<br><br>
+        </h4></p>
+        <h3> <p style="color:rgb(232, 3, 3); font-size:25pt; font-family:'Times New Roman'">Иппотеропевт  </h3></p>
+        <h4><p style="color:rgb(0, 2, 0); font-size:14pt; font-family:'Times New Roman'"><img src="ипо.jpg" width="300" height="400" class="leftimg">
+            Ахватова Ирина Николаевна <br><br><br>
+            Иппотеропия это лечение с помощью верховой езды основанное на психо-эмоциональном воздействии в процессе контакта пациента с лошадью, коррекция осанки, 
+             коррекция мозжечковой стимуляции. Работа с детьми с РАС, ДЦП<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </h4></p>
+      
+
+        <label for="name">ФИО:</label>
+                            <input type="text" id="name" name="name" required><br><br>
+                     
+                            <label for="number">Номер тлф:</label>
+                            <input type="number" id="number" name="number" required><br><br>
+                     
+                            <label for="message">К какому специалисту:</label>
+                            <input id="message" name="message" rows="5"required><br><br>
+                     
+                            <button type="submit">Записаться</button>
+
+                            <h1 align=center><font color="red"> Наше <a href="Zadanie4_3.html">местонахождение</a></font></h1>
+                            <h1 align=center><font color="red"><a href="Zadanie4.html">Перейти в главное меню</a></font></h1>
     </body>
 </html> 

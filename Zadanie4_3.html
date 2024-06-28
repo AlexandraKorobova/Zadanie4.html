@@ -43,7 +43,50 @@
             border-radius: 20px 5px;
             background-color: #ff00d0;
         }
-        
+        body {
+                margin: 0; 
+                height: 100%; 
+                background: url(я.jpg); 
+                background-size: cover; 
+            } 
+            h1{
+                color: #000;
+                font-size: 30pt;
+                font-family: 'Roboto', sans-serif;
+                line-height: 1.5;
+                margin-bottom: 5px; 
+            }
+            h2{
+                color: #000;
+                font-size: 25pt;
+                font-family: 'Roboto', sans-serif;
+                line-height: 1.5;
+                margin-bottom: 5px; /* Отступ между элементами списка */
+            }
+            h3{
+                color: #000;
+                font-size: 20pt;
+                font-family: 'Roboto', sans-serif;
+                line-height: 1.5;
+                margin-bottom: 5px; /* Отступ между элементами списка */
+                padding-left: 30px;
+            }
+            h4{
+                color: #000;
+                font-size: 14pt;
+                font-family: 'Roboto', sans-serif;
+                line-height: 1.5;
+                margin-bottom: 5px; /* Отступ между элементами списка */
+                padding-left: 30px;
+            } 
+            p {
+                color: #000;
+                font-size: 12pt;
+                font-family: 'Roboto', sans-serif;
+                line-height: 1.5;
+                margin-bottom: 5px; /* Отступ между элементами списка */
+                padding-left: 50px;
+            }
            </style>
     </head>
     <body >
@@ -54,12 +97,13 @@
         </ul>
 
         <table border cellspacing=0 cellpadding=10 align=center>
-            <caption align=top> <h3><p style="color:rgb(0, 0, 0); font-size:25pt; font-family:'Times New Roman'"> 
+            <caption align=top> <h2>
                 Расписание
-            </p></h3>
+            </h2>
             
             </caption>
-             <tr>         
+             <tr>    
+                <h4>  
              <th>ПН</th>
              <th>ВТ</th>
              <th>СР</th>
@@ -67,9 +111,11 @@
              <th>ПТ</th>
              <th>СБ</th>
              <th>ВС</th>
+            </h4>   
              </tr>
 
              <tr>
+                <h4>  
              <th> 10:00-19:00 </th>
              <td align =right> 10:00-19:00 </td>
              <td align =right> 10:00-19:00 </td>
@@ -77,14 +123,15 @@
              <td align =right> 10:00-19:00 </td>
              <td align =right> 10:00-19:00 </td>
              <td align =right> 10:00-19:00 </td>
+            </h4>   
              </tr>   
             </table>
 
-            <h3 align=center> <p style="color:rgb(0, 0, 0); font-size:25pt; font-family:'Times New Roman'">
+            <h2 align=center> 
                 Где мы находимся 
-            </h3></p>
+            </h2>
 
-            <h2 align=center><p style="color:rgb(0, 2, 0); font-size:14pt; font-family:'Times New Roman'">
+            <h4 align=center>
                 <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/8/kursk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Курск</a>
                     <a href="https://yandex.ru/maps/8/kursk/house/ulitsa_dzerzhinskogo_82/Z08YdwBkSkYHQFtrfXtzcnxhZA==/?ll=36.174330%2C51.723020&utm_medium=mapframe&utm_source=maps&z=16.69" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Дзержинского, 82 — Яндекс Карты</a>
                     <iframe src="https://yandex.ru/map-widget/v1/?ll=36.174330%2C51.723020&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjQ3MTI1ORJB0KDQvtGB0YHQuNGPLCDQmtGD0YDRgdC6LCDRg9C70LjRhtCwINCU0LfQtdGA0LbQuNC90YHQutC-0LPQviwgODIiCg2EshBCFWDkTkI%2C&z=16.69" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;">
@@ -97,9 +144,9 @@
             <br>
                 Контакты:
             <br>
-                dog5858@rambler.ru
+            <a href="dog5858@rambler.ru">dog5858@rambler.ru</a>
                 <br>
-                +7(910)315-19-50 
+                <a href="+7(910)315-19-50">+7(910)315-19-50</a>
                 <br>
                 Коробова Виолетта Семеновна - руководитель ДЦ "Развитие"
             <br>
@@ -107,19 +154,27 @@
             <br><br>
             <br><br>
             <br>
-            </h2></p>
+            </h4>
 
-            <h4 align=center>
+            <h2 align=center>
             <label for="name">ФИО:</label>
             <input type="text" id="name" name="name" required><br><br>
      
             <label for="number">Номер тлф:</label>
             <input type="number" id="number" name="number" required><br><br>
      
-            <label for="message">К какому специалисту:</label>
-            <input id="message" name="message" rows="5"required><br><br>
-     
-            <button type="submit">Записаться</button>
-        </h4>
+            <form action=”URL-адрес сервера” method=postenctype=multipart/form-data >
+                Выберите специалиста:
+                <select name="language" multiple size=1>
+                <option value="A">Дефектолог
+                <option value="C" selected>Логопед
+                <option value="B">Иппотеропевт
+                </select>
+                <br><br>
+                <input type=submit name=”ok”>
+                <br>
+                <input type=reset name=”cancel”>
+                </form>
+        </h2>
     </body>
 </html> 

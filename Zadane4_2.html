@@ -46,8 +46,8 @@
             }
             .color-block {
                 width: 600px;
-                height: 100px;
-                margin-left: -150px;
+                height: 150px;
+                margin-left: -20px;
                 background-color: #ea97da; 
                 padding: 5px;
                 border: 1px solid #d7e2f3; 
@@ -59,8 +59,21 @@
             }
             .color-block1 {
                 width: 600px;
-                height: 60px;
-                margin-left: -150px;
+                height: 200px;
+                margin-left: -60px;
+                background-color: #ea97da; 
+                padding: 5px;
+                border: 1px solid #d7e2f3; 
+                text-align: left; 
+                border-top-left-radius: 10px; 
+                border-top-right-radius: 10px; 
+                border-bottom-left-radius: 10px; 
+                border-bottom-right-radius: 10px; 
+            }
+            .color-block2 {
+                width: 600px;
+                height: 180px;
+                margin-left: -60px;
                 background-color: #ea97da; 
                 padding: 5px;
                 border: 1px solid #d7e2f3; 
@@ -71,10 +84,67 @@
                 border-bottom-right-radius: 10px; 
             }
             .container {
-                display: flex; 
+                display: flex;
             }
-            
-            
+            .container1 {
+                display: flex;
+                padding-left: 80px; 
+            }
+            .container2 {
+                display: flex;
+                padding-left: 120px; 
+            }
+            .photo{
+                padding-left: 20px;
+            }
+            .photo1{
+                padding-left: 150px;
+            }
+            body {
+                margin: 0; 
+                height: 100%; 
+                background: url(я.jpg); 
+                background-size: cover; 
+            } 
+            h1{
+                color: #000;
+                font-size: 30pt;
+                font-family: 'Roboto', sans-serif;
+                line-height: 1.5;
+                margin-bottom: 5px; 
+            }
+            h2{
+                color: #000;
+                font-size: 25pt;
+                font-family: 'Roboto', sans-serif;
+                line-height: 1.5;
+                margin-bottom: 5px; /* Отступ между элементами списка */
+            }
+            h3{
+                color: #000;
+                font-size: 20pt;
+                font-family: 'Roboto', sans-serif;
+                line-height: 1.5;
+                margin-bottom: 5px; /* Отступ между элементами списка */
+                padding-left: 30px;
+            }
+            h4{
+                color: #000;
+                font-size: 14pt;
+                font-family: 'Roboto', sans-serif;
+                line-height: 1.5;
+                margin-bottom: 5px; /* Отступ между элементами списка */
+                padding-left: 30px;
+            } 
+            p {
+                color: #000;
+                font-size: 12pt;
+                font-family: 'Roboto', sans-serif;
+                line-height: 1.5;
+                margin-bottom: 5px; /* Отступ между элементами списка */
+                padding-left: 50px;
+            }
+           
            </style>
     </head>
 
@@ -85,65 +155,69 @@
             <li><a href="Zadanie4_3.html">Контакты</a></li>
         </ul>
 
-        <h3 align=center> <p style="color:rgb(0, 0, 0); font-size:30pt; font-family:'Times New Roman'"> 
+        <h3 align=center> 
             Наши специалисты
-        </h3></p>
+        </h3>
 
-        <h3> <p style="color:rgb(0, 0, 0); font-size:25pt; font-family:'Times New Roman'">
+        <h3> 
             Дефектолог-эргореабилитолог 
-        </h3></p>
+        </h3>
         
-        <h2><p style="color:rgb(0, 2, 0); font-size:14pt; font-family:'Times New Roman'"><img src="мама.jpg" width="600" height="400" class="leftimg">
-        <br><br><br>
+        <h2 >
+            <div class="photo">
+            <img src="мама.jpg" width="600" height="400" class="leftimg"></div>
+        <br>
         <div class ="text-block">
                   Коробова Виолетта Семеновна 
                 </div>
         </h2>
-        <br>
+        
         <div class="container">
-            <div class="color-block">
+            <div class="color-block1">
+                <h4>
             Дефектолог специалист, занимающийся развитием когнитивной сферы (внимание, память, мышление), 
         <br>
             коррекцией нарушения интеллектуального развития, оказывает помощь детям, испытывающим трудности 
         <br>
-            в усвоении учебных навыков и отклонениях в развитии познавательных процессов.
+            в усвоении учебных навыков и отклонениях в развитии познавательных процессов.</h4>
             </div></div>
-        <br><br><br><br><br><br><br><br><br>
-        </p>
+        <br><br><br><br> <br>
 
-        <h3> <p style="color:rgb(0, 0, 0); font-size:25pt; font-family:'Times New Roman'">
+        <h3> 
             Учитель-логопед высшей квалификационной категории 
-        </h3></p>
+        </h3>
 
-        <h2><p style="color:rgb(0, 2, 0); font-size:14pt; font-family:'Times New Roman'"><img src="логопед.jpg" width="350" height="400" class="leftimg">
+        <h2><div class="photo1"><img src="логопед.jpg" width="350" height="400" class="leftimg">
             <div class ="text-block">
-                <br><br><br><br>
+                <br><div class="container1">
             Пенькова Светлана Владимировна 
-        </div>
+        </div></div>
         </h2><br>
-        <div class="container">
-            <div class="color-block1">
+        <div class="container1">
+            <div class="color-block">
+                <h4>
             Обследование звуковой культуры речи, обследование грамматического строя речи,
             обследование обращенной речи, обследование связанной речи,
-            постановка звуков, обучение чтению и письму.
+            постановка звуков, обучение чтению и письму.</h4>
         </div></div>
-        <br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br>
         </p>
 
-        <h3> <p style="color:rgb(0, 0, 0); font-size:25pt; font-family:'Times New Roman'">
+        <h3> 
             Иппотеропевт  
-        </h3></p>
+        </h3>
 
-        <h2><p style="color:rgb(0, 0, 0); font-size:14pt; font-family:'Times New Roman'"><img src="ипо.jpg" width="350" height="550" class="leftimg"><br><br>
-            <div class ="text-block">
-            <br><br><br><br>
+        <h2> <div class="photo1"><img src="ипо.jpg" width="350" height="550" class="leftimg"></div><br>
+            <div class ="text-block"><div class="container2">
+            <br>
             Ахватова Ирина Николаевна 
-        </div>
+        </div></div>
         </h2><br>
-        <div class="container">
-            <div class="color-block1">
+        <div class="container2">
+            <div class="color-block2">
+                <h4>
             Иппотеропия это лечение с помощью верховой езды основанное на психо-эмоциональном воздействии в процессе контакта пациента с лошадью, коррекция осанки, 
-            коррекция мозжечковой стимуляции. Работа с детьми с РАС, ДЦП.
+            коррекция мозжечковой стимуляции. Работа с детьми с РАС, ДЦП.</h4>
         </div></div>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </p>
@@ -154,10 +228,18 @@
                             <label for="number">Номер тлф:</label>
                             <input type="number" id="number" name="number" required><br><br>
                      
-                            <label for="message">К какому специалисту:</label>
-                            <input id="message" name="message" rows="5"required><br><br>
-                     
-                            <button type="submit">Записаться</button>
+                            <form action=”URL-адрес сервера” method=postenctype=multipart/form-data >
+                                Выберите специалиста:
+                                <select name="language" multiple size=1>
+                                <option value="A">Дефектолог
+                                <option value="C" selected>Логопед
+                                <option value="B">Иппотеропевт
+                                </select>
+                                <br><br>
+                                <input type=submit name=”ok”>
+                                <br>
+                                <input type=reset name=”cancel”>
+                                </form>
 
                            
     </body>

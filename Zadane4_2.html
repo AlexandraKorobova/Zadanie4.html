@@ -34,7 +34,7 @@
             }
             #navbar a {
               color: #fff;
-              padding: 5px 10px;
+              padding: 5px 0px;
               text-decoration: none;
               font-weight: bold;
               display: inline-block;
@@ -181,6 +181,29 @@
                 outline: none;
                 box-shadow: 0 0 0 4px #cbd6ee;
             }
+            .back-to-top {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                display: none; 
+                background-color: #ff00d0;
+                color: white;
+                padding: 10px 15px; 
+                border: none; 
+                border-radius: 50px; 
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+                cursor: pointer;
+                transition: background-color 0.3s ease; 
+                }
+
+                .back-to-top:hover {
+                background-color: #0056b3;
+                }
+
+                .back-to-top i { 
+                font-size: 1.2em; 
+                margin-right: 5px; 
+                }
            </style>
     </head>
 
@@ -191,9 +214,9 @@
             <li><a href="Zadanie4_3.html">Контакты</a></li>
         </ul>
 
-        <h3 align=center> 
+        <h1 align=center> 
             Наши специалисты
-        </h3>
+        </h1>
 
         <h3> 
             Дефектолог-эргореабилитолог 
@@ -270,6 +293,31 @@
         </h4>
             </form>
 
-                           
+            <button class="back-to-top" onclick="scrollToTop()">
+                Наверх
+              </button>
+            
+
+
+              <script>
+                window.onscroll = function() {
+                  scrollFunction();
+                };
+            
+                function scrollFunction() {
+                  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                    document.querySelector(".back-to-top").style.display = "block";
+                  } else {
+                    document.querySelector(".back-to-top").style.display = "none";
+                  }
+                }
+            
+                function scrollToTop() {
+                    window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth' 
+                });}
+              </script>    
+            
     </body>
 </html> 

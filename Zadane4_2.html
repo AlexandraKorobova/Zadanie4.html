@@ -151,7 +151,7 @@
             *, *:before, *:after {
                 box-sizing: border-box;
             }
-            input[type=text] {
+            input[type=name] {
                 padding: 10px;
                 margin:10px 0;
                 border: 2px solid #eee;
@@ -160,6 +160,24 @@
                 border-bottom:1px solid #d7e2f3;
                 width:60%;
             }    
+            input[type=tlf] {
+                padding: 10px;
+                margin:10px 0;
+                border: 2px solid #eee;
+                box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+                border-radius:10px;
+                border-bottom:1px solid #d7e2f3;
+                width:60%;
+            }  
+            input[type=specialist] {
+                padding: 10px;
+                margin:10px 0;
+                border: 2px solid #eee;
+                box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+                border-radius:10px;
+                border-bottom:1px solid #d7e2f3;
+                width:60%;
+            }      
             .c-button {
                 min-width: 100px;
                 font-family: inherit;
@@ -282,16 +300,17 @@
         </p>
 
         <h4 align=center>
-            <input type="text" placeholder="ФИО" />
-     <br>
-            
-            <input type="text" placeholder="Номер телефона" />
-            <br>
-            <input type="text" placeholder="Специалист" />
-            <br><br>
-            <button class="c-button">Отправить</button>
-        </h4>
-            </form>
+                <form id="feedbackForm" onsubmit="return validateForm()">
+                <input type="name" placeholder="ФИО" required/><br>
+                <input type="tlf" placeholder="Номер телефона"required />
+                            <br>
+                            <input type="specialist" placeholder="Специалист" required/>
+                            <br><br>
+                            <button class="c-button">Отправить</button>
+                <br>
+                
+            </h4>
+                </form>
 
             <button class="back-to-top" onclick="scrollToTop()">
                 Наверх
@@ -317,6 +336,33 @@
                     top: 0,
                     behavior: 'smooth' 
                 });}
+
+                function validateForm() {
+                    var name = document.forms["feedbackForm"]["name"].value;
+                    var tlf = document.forms["feedbackForm"]["tlf"].value;
+                    var specialist = document.forms["feedbackForm"]["specialist"].value;
+                    
+
+                    if (name == "") {
+                        alert("Пожалуйста, введите ваше ФИО");
+                        document.forms["feedbackForm"]["name"].focus();
+                        return false;
+                    }
+
+                    if (tlf ="") {
+                        alert("Пожалуйста, напишите ваш номер телефона");
+                        document.forms["feedbackForm"]["tlf"].focus();
+                        return false;
+                    }
+                    
+                    if (specialist="") {
+                        alert("Пожалуйста, выберите специалиста");
+                        document.forms["feedbackForm"]["specialist"].focus();
+                        return false;
+                    }
+                            
+                    return true;
+                        }
               </script>    
             
     </body>

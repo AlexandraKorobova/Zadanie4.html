@@ -3,37 +3,46 @@
         <title>ДЦ "Развитие"</title>
 
         <style>
-            body {
-                margin: 0; 
-                height: 100%; 
-                background: url(я.jpg); 
-                background-size: cover; 
-                font-family: 'Roboto', sans-serif;
-            } 
-            #navbar li { 
-                display: inline; 
+           body { 
+             background-color: #e8cff6; 
+            }
+            .leftimg {
+             float:left; 
+             margin: 7px 250px 7px 0; 
+            }
+            .rightimg  {
+             float: right; 
+             margin: 7px 0 7px 7px; 
             }
             #navbar {
-                margin: 0;
-                padding: 0;
-                list-style-type: none;
-                border: 2px solid #d7e2f3;
-                border-radius: 20px 5px;
-                width: 400px;
-                text-align: center;
-                background-color: #ea97da;
+              margin: 0;
+              padding: 0;
+              list-style-type: none;
+            }
+            #navbar li { 
+              display: inline; 
+            }
+            #navbar {
+              margin: 0;
+              padding: 0;
+              list-style-type: none;
+              border: 2px solid #d7e2f3;
+              border-radius: 20px 5px;
+              width: 400px;
+              text-align: center;
+              background-color: #ea97da;
             }
             #navbar a {
-                color: #fff;
-                padding: 5px 10px;
-                text-decoration: none;
-                font-weight: bold;
-                display: inline-block;
-                width: 100px;
+              color: #fff;
+              padding: 5px 10px;
+              text-decoration: none;
+              font-weight: bold;
+              display: inline-block;
+              width: 100px;
             }
             #navbar a:hover {
-                border-radius: 20px 5px;
-                background-color: #ff00d0;
+              border-radius: 20px 5px;
+              background-color: #ff00d0;
             }
             .reviews {
                 background-color: #f8f8f8;
@@ -58,7 +67,7 @@
             }
             .color-block {
                 width: 670px;
-                height: 720px;
+                height: 750px;
                 margin-left: 30px;
                 background-color: #ea97da; 
                 padding: 5px;
@@ -114,10 +123,48 @@
             img {
                 margin: 5px; /* Отступ вокруг изображений */
             }
+            .some-class {
+                width:200px;
+                padding:20px;
+            }
+            *, *:before, *:after {
+                box-sizing: border-box;
+            }
+            input[type=text] {
+                padding: 10px;
+                margin:10px 0;
+                border: 2px solid #eee;
+                box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+                border-radius:10px;
+                border-bottom:1px solid #d7e2f3;
+                width:60%;
+            }    
+            .c-button {
+                min-width: 100px;
+                font-family: inherit;
+                appearance: none;
+                border: 0;
+                border-radius: 5px;
+                background: #ea97da;
+                color: #fff;
+                padding: 8px 16px;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+
+            .c-button:hover {
+                background: #ff00d0;
+            }
+
+            .c-button:focus {
+                outline: none;
+                box-shadow: 0 0 0 4px #cbd6ee;
+            }
+               
         </style>
     </head>
 
-    <body>
+    <body>    
         <ul id="navbar">
             <li><a href="Zadanie4.html">Главная</a></li>
             <li><a href="Zadane4_2.html">Специалисты</a></li>
@@ -220,7 +267,7 @@
         </ul>
     </div></div>
                         <br><br>
-                        <img src="занятие.jpg" width="270" height="200">
+                        <img src="занятие.jpg" width="250" height="200">
                         <img src="лошадь.jpg" width="160" height="200">
                         <img src="фото.jpg" width="200" height="200">
                         <img src="ы.jpg" width="200" height="200">
@@ -266,24 +313,18 @@
                           <br>
                           <br>
 
-                            <label for="name">ФИО:</label>
-                            <input type="text" id="name" name="name" required><br><br>
-                     
-                            <label for="number">Номер тлф:</label>
-                            <input type="number" id="number" name="number" required><br><br>
-                     
-                            <form action="URL-адрес сервера" method="post"enctype="multipart/form-data" >
-                            Выберите специалиста:
-                            <select name="language" multiple size=1>
-                            <option value="A">Дефектолог
-                            <option value="C" selected>Логопед
-                            <option value="B">Иппотеропевт
-                            </select>
-                            <br><br>
-                            <input type="submit" name=”ok”>
+                          <h4 align=center>
+                            <input type="text" placeholder="ФИО" />
+                     <br>
+                            
+                            <input type="text" placeholder="Номер телефона" />
                             <br>
-                            <input type="reset" name=”cancel”>
+                            <input type="text" placeholder="Специалист" />
+                            <br><br>
+                            <button class="c-button">Отправить</button>
+                        </h4>
                             </form>
+                            
                         
             
             

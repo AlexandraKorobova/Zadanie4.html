@@ -4,7 +4,9 @@
 
         <style>
            body { 
-             background-color: #e8cff6; 
+             background-color: #d1f0fa; 
+             background: url(я.jpg);
+             background-size: cover; 
             }
             .leftimg {
              float:left; 
@@ -94,14 +96,14 @@
                 font-size: 25pt;
                 font-family: 'Roboto', sans-serif;
                 line-height: 1.5;
-                margin-bottom: 5px; /* Отступ между элементами списка */
+                margin-bottom: 5px; 
             }
             h3{
                 color: #000;
                 font-size: 20pt;
                 font-family: 'Roboto', sans-serif;
                 line-height: 1.5;
-                margin-bottom: 5px; /* Отступ между элементами списка */
+                margin-bottom: 5px; 
                 padding-left: 30px;
             }
             h4{
@@ -109,7 +111,7 @@
                 font-size: 14pt;
                 font-family: 'Roboto', sans-serif;
                 line-height: 1.5;
-                margin-bottom: 5px; /* Отступ между элементами списка */
+                margin-bottom: 5px; 
                 padding-left: 30px;
             } 
             p {
@@ -117,11 +119,11 @@
                 font-size: 12pt;
                 font-family: 'Roboto', sans-serif;
                 line-height: 1.5;
-                margin-bottom: 5px; /* Отступ между элементами списка */
+                margin-bottom: 5px; 
                 padding-left: 50px;
             }
             img {
-                margin: 5px; /* Отступ вокруг изображений */
+                margin: 5px; 
             }
             .some-class {
                 width:200px;
@@ -184,7 +186,7 @@
                 bottom: 20px;
                 right: 20px;
                 display: none; 
-                background-color: #ff00d0;
+                background-color: #ea97da;
                 color: white;
                 padding: 10px 15px; 
                 border: none; 
@@ -195,7 +197,7 @@
                 }
 
                 .back-to-top:hover {
-                background-color: #0056b3;
+                background-color: #ea97da;
                 }
 
                 .back-to-top i { 
@@ -213,6 +215,10 @@
             <li><a href="Zadane4_2.html">Специалисты</a></li>
             <li><a href="Zadanie4_3.html">Контакты</a></li>
         </ul>
+
+        
+    
+        <div id="results"></div>
 
         <h1 align=center> 
             Детский центр "Развитие"
@@ -375,51 +381,10 @@
                             
 
 
-                              <script>
-                                window.onscroll = function() {
-                                  scrollFunction();
-                                };
-                            
-                                function scrollFunction() {
-                                  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                                    document.querySelector(".back-to-top").style.display = "block";
-                                  } else {
-                                    document.querySelector(".back-to-top").style.display = "none";
-                                  }
-                                }
-                            
-                                function scrollToTop() {
-                                    window.scrollTo({
-                                    top: 0,
-                                    behavior: 'smooth' 
-                                });}
+                              <script src="zadanie.js">
+                                
 
-                                function validateForm() {
-                                    var name = document.forms["feedbackForm"]["name"].value;
-                                    var tlf = document.forms["feedbackForm"]["tlf"].value;
-                                    var specialist = document.forms["feedbackForm"]["specialist"].value;
-                                    
-
-                                    if (name == "") {
-                                        alert("Пожалуйста, введите ваше ФИО");
-                                        document.forms["feedbackForm"]["name"].focus();
-                                        return false;
-                                    }
-
-                                    if (tlf ="") {
-                                        alert("Пожалуйста, напишите ваш номер телефона");
-                                        document.forms["feedbackForm"]["tlf"].focus();
-                                        return false;
-                                    }
-                                    
-                                    if (specialist="") {
-                                        alert("Пожалуйста, выберите специалиста");
-                                        document.forms["feedbackForm"]["specialist"].focus();
-                                        return false;
-                                    }
-                                            
-                                    return true;
-                                        }
+                                        
                               </script>            
             
         </body>
